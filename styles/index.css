@@ -41,6 +41,7 @@ h2 {
 a {
   text-decoration: none;
   color: inherit;
+  font-weight: bolder;
 }
 
 button {
@@ -192,6 +193,8 @@ main {
   margin-bottom: 3rem;
 }
 
+/* CONTENT ---------------------------------------------------------------*/
+
 .content {
   flex: 1;
   display: grid;
@@ -213,9 +216,15 @@ main {
   margin: 0.5rem 0;
 }
 
-.promotion-item hr {
+.content .promotion-item hr {
   border-top: 1px solid var(--gray-100);
 }
+
+.content .promotion-item:hover {
+  cursor: pointer;
+}
+
+/* TAG-LIST ---------------------------------------------------------------*/
 
 .tag-list {
   margin-bottom: 0.5rem;
@@ -225,6 +234,8 @@ main {
   background: var(--blue);
 }
 
+/* IMAGE-CONTAINER -------------------------------------========-----------*/
+
 .image-container {
   display: flex;
   flex-direction: column;
@@ -233,4 +244,10 @@ main {
 
 .image-container img {
   display: block;
+}
+
+/* FOOTER ---------------------------------------------------------------*/
+
+footer {
+  margin: 1rem;
 }
