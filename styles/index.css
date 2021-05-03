@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --blue: #3483fa;
+  --gray-50: #f7f8fa;
+  --gray-100: #e6e8eb;
+  --gray-200: #afb2b1;
+  --gray-500: #808080;
+  --gray-800: #494d4b;
+  --green-500: #04d361;
+  --purple-300: #9f75ff;
+  --purple-400: #9164fa;
+  --purple-500: #8257e5;
+  --purple-800: #6f48c9;
+}
+
+body, input, textarea, button {
+  font: 500 1rem Inter, sans-serif;
+  color: var(--gray-500);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: Lexend, sans-serif;
+  color: var(--gray-800);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1em 0;
+  padding: 0;
+}
+
+small {
+  color: var(--gray-200)
+}
+
+.tag {
+  background: black;
+  color: white;
+  border-radius: 7.5%;
+}
+
+/* HEADER -------------------------------------------------------- */
+
+header {
+  display: flex;
+  background: yellow;
+}
+
+.logo {
+  display: flex;
+  margin: 1rem;
+}
+
+.logo img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 0.5rem;
+  display: flex;
+}
+
+.search-bar .form-group {
+  flex: 1;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  padding-left: 0.5rem;
+  border: 1px solid var(--gray-200);
+  border-right: 0;
+}
+
+.search-bar input, .search-bar button {
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: var(--gray-200);
+}
+
+.search-bar .btn-search {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-left: 0;
+}
+
+.search-bar .btn-search i {
+  color: var(--gray-200);
+  padding: 0 10px;
+  border-left: 1px solid var(--gray-200);
+}
+
+.search-bar .btn-search i:hover {
+  color: var(--gray-500);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.login .item {
+  padding: 5px;
+  margin: 0 0.5rem;
+}
+
+/* DAY-OFFERS --------------------------------------------------------*/
+
+.day-offers {
+  display: flex;
+  margin: 1.5rem;
+}
+
+.day-offers .description {
+  flex: 1;
+  margin: 1.5rem 1px;
+}
+
+.day-offers .offer {
+  width: 9rem;
+  margin: 1px;
+}
+
+.day-offers .offer:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.day-offers .offer i {
+  color: var(--blue);
+}
+
+.day-offers .offer span {
+  text-align: center;
+}
+
+.day-offers .offer p {
+  text-align: center;
+  margin: 1rem;
+}
+
+/* MAIN ---------------------------------------------------------------*/
+
+main {
+  background: var(--gray-100);
+  display: flex;
+}
+
+/* LEFT-SIDEBAR ---------------------------------------------------------------*/
+
+.left-sidebar {
+  margin: 2rem 3rem;
+}
+
+.left-sidebar section {
+  margin-bottom: 3rem;
+}
+
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
+}
+
+.content .promotion-item {
+  background: var(--white);
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.content .promotion-item img {
+  width: 200px;
+}
+
+.content .promotion-item p {
+  margin: 0.5rem 0;
+}
+
+.promotion-item hr {
+  border-top: 1px solid var(--gray-100);
+}
+
+.tag-list {
+  margin-bottom: 0.5rem;
+}
+
+.tag-list .tag {
+  background: var(--blue);
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  display: block;
+}
